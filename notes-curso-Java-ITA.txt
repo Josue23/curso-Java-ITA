@@ -1,0 +1,93 @@
+Classe Carro
+Estado -> atributos(características)
+    Velocidade = 2.0
+    Potência do motor = 60 km/h
+
+Comportamento -> métodos(ações)
+    Acelerar
+    Frear
+
+
+
+Classe                Objeto
+    Abstrato              Concreto
+    Tem atributos         Tem valores
+    Tem ações             Executa ações
+
+
+==================================================================
+https://www.coursera.org/learn/orientacao-a-objetos-com-java/lecture/atP2n/criando-classes-com-java
+    Como criar classes em Java
+
+Em Java, quase tudo que eu crio é uma classe
+
+public class Carro {
+    ...
+}
+
+
+Como um sistema pode ter muitas classes, els costumam ser organizadas em
+pacotes
+
+package org.veiculos;
+
+public class Carro {
+    ...
+}
+
+
+Para usar uma classe fora do seu pacote, você deve importar a classe ou o seu pacote
+
+// importa todas as classes de java.util
+import java.util.*;
+
+// importa a classe Math
+import java.lang,Math;
+
+A informação  que uma classe precisa saber é armazenada nos atributos
+public class Carro {
+    int potencia(atributo); // cada objeto da classe terá um valor diferente
+    float velocidade(atributo); // cada objeto da classe terá um valor diferente
+}
+// atributos são como se fosse variáveis dentro da minha classe
+// todo atributo precisa ter um tipo
+// um atributo pode ser de um tipo primitivo ou de uma classe
+
+// Criando objetos(criando um carro)
+Usa o operador new
+Carro fusca = new Carro();
+Carro(declara o tipo da variável) fusca = new Carro();
+
+// acessando os atributos do carro
+// modifica o atributo potência
+fusca.potencia = 2;
+
+// recupera a informação
+float v = fusca.velocidade;
+// os atributos podem ser acessados para escrita e leitura
+
+// Comportamento
+// os métodos definem o comportamento da classe
+public class Carro {
+    void acelerar() {
+        velocidade += potencia;
+    }
+    void frear() {
+        velocidade *= 0.5;
+    }
+}
+
+// Retorno void não retorna nada
+// void acelerar() { // pode ter ou não ter parâmetros
+// velocidade += potencia; // manipula o estado da classe
+
+// executando métodos
+fusca.acelerar();
+fusca.frear();
+// o método será executado no objeto utilizado para a chamada
+
+// Resumo da aula:
+    Criar classe
+    Declarar atributo
+    Adicionar Métodos
+    Instanciar Objetos
