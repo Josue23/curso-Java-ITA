@@ -91,3 +91,34 @@ fusca.frear();
     Declarar atributo
     Adicionar Métodos
     Instanciar Objetos
+
+
+==================================================================
+==================================================================
+Construtores de classes
+// entender o conceito de construtores e aprender a criá-los em classes Java
+
+https://www.coursera.org/learn/orientacao-a-objetos-com-java/lecture/xlPfP/construtores-de-classes
+
+
+Carro fusca = new Carro(); // construtor default, sem parâmetros
+// vimos anteriormente como criar classes sem passar nenhum parâmetro nesse processo
+
+// Os construtores são métodos especiais usados para criar objetos da classe,com eles você pode parametrizar o objeto criado e inicializar variáveis
+
+// veja como fica o construtor para a classe Carro
+public class Carro {
+    int potencia;
+    float velocidade;
+    // inicio do construtor da classe Carro
+    Carro(int potencia) { // ñ precisa de retorno
+        this.potencia = potencia; // referencia elementos da classe
+        velocidade = 0;
+    } // this referencia métodos ou atributos da classe
+    // fim do construtor
+}
+// um construtor não precisa de um retorno como um método normal
+//               sempre vai ter o mesmo nome da classe
+// this é utilizado para referenciar os métodos ou atributos da classe
+    exemplo: tenho um parâmetro potencia do tipo inteiro, o this diferencia o parâmetro que eu to recebendo do atributo que é da classe
+// o this sempre é utilizado para referenciar os elementos da classe

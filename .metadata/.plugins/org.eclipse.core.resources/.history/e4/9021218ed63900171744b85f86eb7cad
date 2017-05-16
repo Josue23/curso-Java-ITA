@@ -1,0 +1,11 @@
+
+public class Compra {
+	int valorTotal;
+	int numeroParcelas;
+	
+	// compra a vista
+	public Compra(int valor) {
+		valorTotal = valor;
+	}
+
+}
