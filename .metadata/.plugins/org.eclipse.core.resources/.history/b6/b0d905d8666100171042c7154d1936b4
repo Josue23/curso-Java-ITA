@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+/**
+ * 
+ * @author josué - josuerodrigues@gmail.com
+ *
+ */
+public class CarrinhoDeCompras {
+
+	ArrayList<Pizza> pizzas = new ArrayList<>();
+
+	void adicionarPizza(Pizza pizza) {
+
+		if (pizza.totalIgredientesPizza() > 0) {
+			pizzas.add(pizza);
+		}
+	}
+
+	int totalPizzas() {
+		return pizzas.size();
+	}
+
+	int totalDoCarrinho() {
+		int precoTotal = 0;
+		for (Pizza pizza : pizzas) {
+			precoTotal += pizza.getPreco();
+		}
+		return precoTotal;
+	}
+
+}

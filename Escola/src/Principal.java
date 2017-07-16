@@ -1,0 +1,16 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Aluno josue = new Aluno();
+        josue.bim1 = 70;
+        josue.bim2 = 60;
+        josue.bim3 = 80;
+        josue.bim4 = 70;
+
+        System.out.println(josue.media());
+        System.out.println(josue.passouDeAno());
+
+	}
+
+}

@@ -1,0 +1,15 @@
+
+public class Pizza {
+	
+	public void adicionaIngrediente() {
+		String[] ingredientes = new String[10];
+	}
+	
+	public int getPreco() {
+		int valor;
+		if (adicionaIngrediente() <= 2) {
+			valor = 15;
+		}
+	}
+
+}

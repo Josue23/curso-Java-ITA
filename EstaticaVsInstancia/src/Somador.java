@@ -1,0 +1,17 @@
+
+public class Somador {
+	String nome;
+	int valorInstancia = 0; // variável de instancia
+	static int valorEstatica = 0; // variável estática
+
+	void somar() {
+		valorInstancia++;
+		valorEstatica++;
+	}
+
+	void imprimir() {
+		System.out.println(
+				"O somador tem " + nome + ": instância = "
+               + valorInstancia + " e estática = " + valorEstatica);
+    }
+}

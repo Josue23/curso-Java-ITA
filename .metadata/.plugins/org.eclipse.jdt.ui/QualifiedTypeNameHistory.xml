@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="Compra"/>
+<fullyQualifiedTypeName name="RegistroPontos"/>
+<fullyQualifiedTypeName name="CalculadoraBonus"/>
+<fullyQualifiedTypeName name="Usuario"/>
+<fullyQualifiedTypeName name="Somador"/>
+<fullyQualifiedTypeName name="VerificadoraNotas"/>
+<fullyQualifiedTypeName name="Aluno"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

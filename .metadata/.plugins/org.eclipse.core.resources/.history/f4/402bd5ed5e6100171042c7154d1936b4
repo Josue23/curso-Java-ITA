@@ -1,0 +1,8 @@
+
+public class Pizza {
+	
+	public void adicionaIngrediente() {
+		String ingredientes;
+	}
+
+}

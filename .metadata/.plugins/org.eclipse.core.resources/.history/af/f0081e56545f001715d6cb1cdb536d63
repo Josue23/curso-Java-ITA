@@ -1,0 +1,22 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Aluno josue = new Aluno();
+        josue.bim1 = 70;
+        josue.bim2 = 60;
+        josue.bim3 = 80;
+        josue.bim4 = 70;
+
+        System.out.println(VerificadoraNotas.mediaAluno(josue));
+        System.out.println(VerificadoraNotas.passouDeAno(josue));
+
+        if (VerificadoraNotas.passouDeAno(josue) == true) {
+            System.out.println("O aluno " +josue+ " passou de ano." );
+        System.out.println("O aluno " +josue+ " não passou de ano." );
+
+
+        }
+	}
+
+}

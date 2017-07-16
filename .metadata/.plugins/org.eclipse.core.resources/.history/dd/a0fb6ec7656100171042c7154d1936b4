@@ -1,0 +1,48 @@
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 
+ * @author josué - josuerodrigues@gmail.com
+ *
+ */
+public class Pizza {
+
+	static HashMap<String, Integer> ientes = new HashMap();
+	HashMap<String, Integer> ientesDaPizza = new HashMap();
+
+	public void adicionaIngrediente(String ingrediente) {
+		int ingredienteDaPizza = this.ientesDaPizza.getOrDefault(ingrediente, 0);
+		this.ingredienteDaPizza.put(ingrediente, ++ingredienteDaPizza);
+
+		contabilizaiente(ingrediente);
+	}
+
+	private static void contabilizaiente(String iente) {
+		int ientes = Pizza.ientes.getOrDefault(iente, 0);
+		Pizza.ientes.put(iente, ++ientes);
+	}
+
+	/*
+	 * static void zerarientes() { Pizza.ientes.clear(); }
+	 */
+	public int totalientes() {
+		int total = 0;
+		for (Map.Entry<String, Integer> entry : ientesDaPizza.entrySet()) {
+			total += entry.getValue();
+		}
+		return total;
+
+	}
+
+	int getPreco() {
+		int total = totalientes();
+
+		if (total <= 2) {
+			return 15;
+		} else if (total >= 3 && total <= 5) {
+			return 20;
+		}
+		return 22;
+	}
+}

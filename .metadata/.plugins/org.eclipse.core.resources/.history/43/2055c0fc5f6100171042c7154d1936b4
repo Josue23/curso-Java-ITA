@@ -1,0 +1,9 @@
+
+public class Pizza {
+	
+	public void adicionaIngrediente() {
+		String ingredientes[];
+	}
+	public int getPreco() {
+
+}

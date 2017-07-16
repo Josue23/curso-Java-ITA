@@ -1,0 +1,40 @@
+import java.util.Map;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Pizza mussarela = new Pizza();
+		mussarela.adicionaIngrediente("tomate");
+		mussarela.adicionaIngrediente("presunto");
+		mussarela.adicionaIngrediente("mussarela");
+
+		Pizza calabresa = new Pizza();
+		calabresa.adicionaIngrediente("beringela");
+		calabresa.adicionaIngrediente("mussarela");
+
+		Pizza catupiry = new Pizza();
+		catupiry.adicionaIngrediente("tomate");
+		catupiry.adicionaIngrediente("catupiry");
+		catupiry.adicionaIngrediente("calabresa");
+		catupiry.adicionaIngrediente("mussarela");
+
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+
+		carrinho.adicionarPizza(mussarela);
+		carrinho.adicionarPizza(calabresa);
+		carrinho.adicionarPizza(catupiry);
+
+		System.out.println("Preço da pizza de mussarela: " + mussarela.getPreco());
+		System.out.println("Preço da pizza de calabresa: " + calabresa.getPreco());
+		System.out.println("Preço da pizza de catupiry: " + catupiry.getPreco());
+
+		System.out.println("Total do carrinho: " + carrinho.totalDoCarrinho());
+
+		System.out.println("ingredientes utilizados e quantidades");
+
+		for (Map.Entry<String, Integer> ingrediente : Pizza.ingredientesTotais.entrySet()) {
+			System.out.println("ingrediente: " + ingrediente.getKey() + " quantidade: " + ingrediente.getValue());
+		}
+	}
+}

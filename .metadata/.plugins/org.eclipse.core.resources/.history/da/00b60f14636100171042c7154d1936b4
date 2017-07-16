@@ -1,0 +1,23 @@
+import java.util.Map;
+import java.util.HashMap;
+
+/**
+ * 
+ * @author josué - josuerodrigues@gmail.com
+ *
+ */
+
+public class Pizza {
+	
+	public void adicionaIngrediente() {
+		String[] ingredientes = new String[10];
+	}
+	
+	public int getPreco() {
+		int valor;
+		if (adicionaIngrediente() <= 2) {
+			valor = 15;
+		}
+	}
+
+}
